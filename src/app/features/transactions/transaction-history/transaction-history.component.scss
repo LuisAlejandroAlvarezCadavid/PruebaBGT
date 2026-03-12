@@ -1,0 +1,38 @@
+.transaction-history-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 24px;
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a237e;
+  }
+
+  .page-subtitle {
+    margin: 4px 0 0;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+  }
+}
+
+app-balance-card {
+  display: block;
+  margin-bottom: 24px;
+  max-width: 400px;
+}
+
+.history-card {
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  .transaction-history-container {
+    padding: 16px;
+  }
+}

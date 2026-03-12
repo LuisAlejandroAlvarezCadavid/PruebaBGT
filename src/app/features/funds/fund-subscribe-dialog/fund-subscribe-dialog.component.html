@@ -1,0 +1,69 @@
+<h2 mat-dialog-title>
+  <mat-icon class="dialog-title-icon">add_circle</mat-icon>
+  Suscribirse a fondo
+</h2>
+
+<mat-dialog-content>
+  <div class="fund-info">
+    <div class="info-row">
+      <span class="info-label">Fondo</span>
+      <span class="info-value">{{ data.fund.name }}</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Categoría</span>
+      <span class="info-value">{{ data.fund.category }}</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Monto mínimo</span>
+      <span class="info-value highlight">{{ data.fund.minAmount | copCurrency }}</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Su saldo actual</span>
+      <span class="info-value" [class.insufficient]="!hasSufficientBalance">
+        {{ data.currentBalance | copCurrency }}
+      </span>
+    </div>
+  </div>
+
+  @if (!hasSufficientBalance) {
+    <div class="error-message" role="alert">
+      <mat-icon>error</mat-icon>
+      <span>No tiene saldo disponible para vincularse al fondo {{ data.fund.name }}</span>
+    </div>
+  }
+
+  @if (hasSufficientBalance) {
+    <div class="notification-section">
+      <label id="notification-label" class="section-label">
+        Método de notificación <span class="required">*</span>
+      </label>
+      <mat-radio-group [formControl]="notificationControl"
+                       aria-labelledby="notification-label"
+                       class="notification-group">
+        <mat-radio-button value="email">
+          <mat-icon class="option-icon">email</mat-icon>
+          Email
+        </mat-radio-button>
+        <mat-radio-button value="sms">
+          <mat-icon class="option-icon">sms</mat-icon>
+          SMS
+        </mat-radio-button>
+      </mat-radio-group>
+      @if (notificationControl.touched && notificationControl.invalid) {
+        <span class="field-error">Seleccione un método de notificación</span>
+      }
+    </div>
+  }
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancelar</button>
+  @if (hasSufficientBalance) {
+    <button mat-flat-button
+            color="primary"
+            [disabled]="notificationControl.invalid"
+            (click)="onConfirm()">
+      Confirmar suscripción
+    </button>
+  }
+</mat-dialog-actions>

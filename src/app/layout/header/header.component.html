@@ -1,0 +1,28 @@
+<mat-toolbar class="header-toolbar">
+  <div class="header-left">
+    <mat-icon class="logo-icon">trending_up</mat-icon>
+    <span class="app-title">BTG Pactual</span>
+  </div>
+
+  <nav class="header-nav">
+    <a mat-button routerLink="/fondos" routerLinkActive="active-link">
+      <mat-icon>list_alt</mat-icon>
+      <span class="nav-label">Fondos</span>
+    </a>
+    <a mat-button routerLink="/suscripciones" routerLinkActive="active-link">
+      <mat-icon>bookmark</mat-icon>
+      <span class="nav-label">Mis Suscripciones</span>
+    </a>
+    <a mat-button routerLink="/transacciones" routerLinkActive="active-link">
+      <mat-icon>receipt_long</mat-icon>
+      <span class="nav-label">Historial</span>
+    </a>
+  </nav>
+
+  <div class="header-right">
+    <div class="balance-display">
+      <mat-icon>account_balance_wallet</mat-icon>
+      <span class="balance-text">{{ balance$ | async | copCurrency }}</span>
+    </div>
+  </div>
+</mat-toolbar>

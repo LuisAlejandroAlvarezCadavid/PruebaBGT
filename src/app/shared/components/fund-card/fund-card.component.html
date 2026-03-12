@@ -1,0 +1,29 @@
+<mat-card class="fund-card" [class.subscribed]="isSubscribed()">
+  <mat-card-header>
+    <mat-card-title>{{ fund().name }}</mat-card-title>
+    <mat-card-subtitle>
+      <mat-chip-set>
+        <mat-chip [highlighted]="fund().category === 'FPV'"
+                  class="category-chip">
+          {{ fund().category }}
+        </mat-chip>
+      </mat-chip-set>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="fund-details">
+      <div class="fund-detail-item">
+        <span class="detail-label">Monto mínimo</span>
+        <span class="detail-value">{{ fund().minAmount | copCurrency }}</span>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    @if (isSubscribed()) {
+      <span class="subscribed-badge">
+        <mat-icon>check_circle</mat-icon>
+        Suscrito
+      </span>
+    }
+  </mat-card-actions>
+</mat-card>

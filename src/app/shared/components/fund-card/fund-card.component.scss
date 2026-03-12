@@ -1,0 +1,48 @@
+.fund-card {
+  height: 100%;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  &.subscribed {
+    border-left: 4px solid #4caf50;
+  }
+}
+
+.fund-details {
+  margin-top: 12px;
+}
+
+.fund-detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-label {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+}
+
+.detail-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a237e;
+}
+
+.category-chip {
+  font-size: 12px;
+}
+
+.subscribed-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #4caf50;
+  font-weight: 500;
+  font-size: 14px;
+}
