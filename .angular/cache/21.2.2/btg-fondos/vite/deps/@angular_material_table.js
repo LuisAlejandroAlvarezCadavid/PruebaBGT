@@ -21,11 +21,11 @@ import "./chunk-GUGIMSVJ.js";
 import {
   Platform
 } from "./chunk-2XZGRG2O.js";
+import "./chunk-JOE4DYCJ.js";
 import {
   BidiModule,
   Directionality
 } from "./chunk-3S2U2ASA.js";
-import "./chunk-JOE4DYCJ.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -80,13 +80,13 @@ import {
   ɵɵtextInterpolate1,
   ɵɵviewQuery
 } from "./chunk-QAGRARC5.js";
-import "./chunk-4YCCEXQQ.js";
 import {
   animationFrameScheduler,
   asapScheduler,
   isObservable,
   merge
 } from "./chunk-J46EEYGT.js";
+import "./chunk-4YCCEXQQ.js";
 import {
   BehaviorSubject,
   Subject,

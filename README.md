@@ -256,4 +256,8 @@ http://localhost:4200
 | `/suscripciones` | Mis Suscripciones | Fondos suscritos con opción de cancelar |
 | `/transacciones` | Historial | Registro de todas las operaciones |
 
+
+## Video de la aplicacion
+
+![alt text](<Recording 2026-03-12 140041.gif>)
 ---
