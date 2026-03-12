@@ -6,10 +6,10 @@ import {
   HttpClient
 } from "./chunk-OYYZBO32.js";
 import "./chunk-YB62LY7A.js";
+import "./chunk-JOE4DYCJ.js";
 import {
   BidiModule
 } from "./chunk-3S2U2ASA.js";
-import "./chunk-JOE4DYCJ.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -39,10 +39,10 @@ import {
   ɵɵprojection,
   ɵɵprojectionDef
 } from "./chunk-QAGRARC5.js";
-import "./chunk-4YCCEXQQ.js";
 import {
   forkJoin
 } from "./chunk-J46EEYGT.js";
+import "./chunk-4YCCEXQQ.js";
 import {
   Subscription,
   catchError,

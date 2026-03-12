@@ -4,10 +4,10 @@ import "./chunk-GUGIMSVJ.js";
 import {
   Platform
 } from "./chunk-2XZGRG2O.js";
+import "./chunk-JOE4DYCJ.js";
 import {
   BidiModule
 } from "./chunk-3S2U2ASA.js";
-import "./chunk-JOE4DYCJ.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -32,8 +32,8 @@ import {
   ɵɵprojectionDef,
   ɵɵqueryRefresh
 } from "./chunk-QAGRARC5.js";
-import "./chunk-4YCCEXQQ.js";
 import "./chunk-J46EEYGT.js";
+import "./chunk-4YCCEXQQ.js";
 import "./chunk-U7EDC2PH.js";
 
 // node_modules/@angular/material/fesm2022/toolbar.mjs
