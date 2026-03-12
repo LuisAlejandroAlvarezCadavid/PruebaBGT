@@ -1,0 +1,11 @@
+<mat-card class="balance-card">
+  <mat-card-content>
+    <div class="balance-content">
+      <mat-icon class="balance-icon">account_balance_wallet</mat-icon>
+      <div class="balance-info">
+        <span class="balance-label">Saldo disponible</span>
+        <span class="balance-amount">{{ balance$ | async | copCurrency }}</span>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,35 @@
+<div class="fund-list-container">
+  <div class="page-header">
+    <h1>Fondos Disponibles</h1>
+    <p class="page-subtitle">Seleccione un fondo para suscribirse</p>
+  </div>
+
+  <app-balance-card></app-balance-card>
+
+  <div class="funds-grid">
+    @for (fund of funds$ | async; track fund.id) {
+      <div class="fund-grid-item">
+        <app-fund-card
+          [fund]="fund"
+          [isSubscribed]="isSubscribed(fund.id)">
+        </app-fund-card>
+        <div class="fund-actions">
+          @if (!isSubscribed(fund.id)) {
+            <button mat-raised-button
+                    color="primary"
+                    (click)="onSubscribe(fund)"
+                    matTooltip="Suscribirse a este fondo">
+              <mat-icon>add_circle</mat-icon>
+              Suscribirse
+            </button>
+          } @else {
+            <button mat-button disabled>
+              <mat-icon>check_circle</mat-icon>
+              Ya suscrito
+            </button>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</div>

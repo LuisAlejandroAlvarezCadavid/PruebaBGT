@@ -1,0 +1,16 @@
+<div class="transaction-history-container">
+  <div class="page-header">
+    <h1>Historial de Transacciones</h1>
+    <p class="page-subtitle">Registro de todas las suscripciones y cancelaciones realizadas</p>
+  </div>
+
+  <app-balance-card></app-balance-card>
+
+  <mat-card class="history-card">
+    <mat-card-content>
+      @if (transactions$ | async; as transactions) {
+        <app-transaction-table [transactions]="transactions"></app-transaction-table>
+      }
+    </mat-card-content>
+  </mat-card>
+</div>

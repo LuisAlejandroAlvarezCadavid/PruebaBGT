@@ -1,0 +1,85 @@
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--mat-sys-primary);
+  color: var(--mat-sys-on-primary);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  font-size: 28px;
+  width: 28px;
+  height: 28px;
+}
+
+.app-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 4px;
+}
+
+.header-nav a {
+  color: var(--mat-sys-on-primary);
+  opacity: 0.85;
+  border-radius: 8px;
+
+  &.active-link {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.balance-display {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.balance-text {
+  white-space: nowrap;
+}
+
+/* Responsivo: ocultar labels en pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav-label {
+    display: none;
+  }
+
+  .app-title {
+    display: none;
+  }
+
+  .header-toolbar {
+    padding: 0 12px;
+  }
+
+  .balance-display {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+}
