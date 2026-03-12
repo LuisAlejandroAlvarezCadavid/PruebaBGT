@@ -4,11 +4,11 @@ import {
 import "./chunk-N4DOILP3.js";
 import "./chunk-2XZGRG2O.js";
 import {
-  NgTemplateOutlet
-} from "./chunk-JOE4DYCJ.js";
-import {
   BidiModule
 } from "./chunk-3S2U2ASA.js";
+import {
+  NgTemplateOutlet
+} from "./chunk-JOE4DYCJ.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -44,8 +44,8 @@ import {
   ɵɵtemplateRefExtractor,
   ɵɵviewQuery
 } from "./chunk-QAGRARC5.js";
-import "./chunk-J46EEYGT.js";
 import "./chunk-4YCCEXQQ.js";
+import "./chunk-J46EEYGT.js";
 import "./chunk-U7EDC2PH.js";
 
 // node_modules/@angular/material/fesm2022/progress-spinner.mjs

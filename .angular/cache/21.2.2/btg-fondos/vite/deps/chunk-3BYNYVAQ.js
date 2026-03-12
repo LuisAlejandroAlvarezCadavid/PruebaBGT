@@ -1,7 +1,10 @@
 import {
   isFakeMousedownFromScreenReader,
   isFakeTouchstartFromScreenReader
-} from "./chunk-2TQHKYVO.js";
+} from "./chunk-2KJ332MV.js";
+import {
+  _CdkPrivateStyleLoader
+} from "./chunk-NPFALCNM.js";
 import {
   _animationsDisabled
 } from "./chunk-U5CY7HEE.js";
@@ -15,9 +18,6 @@ import {
 import {
   Platform
 } from "./chunk-2XZGRG2O.js";
-import {
-  _CdkPrivateStyleLoader
-} from "./chunk-NPFALCNM.js";
 import {
   BidiModule
 } from "./chunk-3S2U2ASA.js";
@@ -593,4 +593,4 @@ export {
   _StructuralStylesLoader,
   MatRippleModule
 };
-//# sourceMappingURL=chunk-OHQHK4C7.js.map
+//# sourceMappingURL=chunk-3BYNYVAQ.js.map
